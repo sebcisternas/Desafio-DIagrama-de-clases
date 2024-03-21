@@ -1,20 +1,26 @@
 class ListadoRespuestas:
+     # constructor de la clase ListadoRespuestas
     def __init__(self, encuesta, usuario):
-        self._encuesta = encuesta
-        self._usuario = usuario
-        self._respuestas = []
+       
+        self.__encuesta = encuesta  
+        self.__usuario = usuario  
+        self.__respuestas = []  
 
     @property
     def encuesta(self):
-        return self._encuesta
+        # getter para la encuesta asociada
+        return self.__encuesta
 
     @property
     def usuario(self):
-        return self._usuario
+        # getter para el usuario asociado
+        return self.__usuario
 
     @property
     def respuestas(self):
-        return self._respuestas
+        # getter para la lista de respuestas
+        return self.__respuestas
 
     def agregar_respuesta(self, respuesta):
-        self._respuestas.append(respuesta)
+        # metodo para agregar una respuesta a la lista
+        self.__respuestas.append(respuesta)

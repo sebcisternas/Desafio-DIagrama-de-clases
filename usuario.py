@@ -1,6 +1,7 @@
 from listado_respuestas import ListadoRespuestas
 
 class Usuario:
+    # constructor de la clase Usuario
     def __init__(self, correo: str, edad: int, region: int):
         self.__correo = correo
         self.__edad = edad
@@ -36,5 +37,4 @@ class Usuario:
         return self.__listado_respuestas
 
     def contestar_encuesta(self, encuesta):
-        # Implementación del método contestar_encuesta
         pass
